@@ -59,9 +59,11 @@ app.get('/about', (req, res) => {
     });
 });
 
-// app.get('/maintenance', (req, res) => {
-//     res.render('maintenance.hbs');
-// });
+app.get('/contact', (req, res) => {
+    res.render('contact.hbs', {
+        pageTitle: 'Contact Us Page'
+    });
+});
 
 app.get('/bad', (req, res) => {
     res.send({
